@@ -37,13 +37,13 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 
 **WEBHOOK**
 
-  Method - Post
+  ***Method*** - Post
   
-  Body - NULL
+  ***Body*** - NULL
   
-  URL - https://mywebsite.com/projects/denonavr.php?cmd=muteon | <URL of where you placed the PHP script> + <command> 
+  ***URL*** - https://(yourserver)/denonavr.php?cmd=muteon | (URL of script) + ?cmd= + (parameter) 
  
-  Content Type - application/x-www-form-urlencoded
+  ***Content Type*** - application/x-www-form-urlencoded
   
   
 **Parameters in PHP Script**
@@ -70,14 +70,14 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 
 | Parameter | URL                                                 | IFTTT Cmd                     | Alexa Cmd              |
 |-----------|-----------------------------------------------------|-------------------------------|------------------------|
-| volup     | https://(yourserver).com/denonavr.php?cmd=volup     | Alexa trigger volume up       | Alexa, volume up       |
-| wayvolup  | https://(yourserver).com/denonavr.php?cmd=wayvolup  | Alexa trigger volume way up   | Alexa, volume way up   |
-| voldwn    | https://(yourserver).com/denonavr.php?cmd=voldwn    | Alexa trigger volume down     | Alexa, volume down     |
-| wayvoldwn | https://(yourserver).com/denonavr.php?cmd=wayvoldwn | Alexa trigger volume way down | Alexa, volume way down |
-| mplay     | https://(yourserver).com/denonavr.php?cmd=mplay     | Alexa trigger Apple TV        | Alexa, Apple TV        |
-| cblsat    | https://(yourserver).com/denonavr.php?cmd=cblsat    | Alexa trigger TV              | Alexa, TV              |
-| muteon    | https://(yourserver).com/denonavr.php?cmd=muteon    | Alexa trigger mute tv         | Alexa, mute tv         |
-| muteoff   | https://(yourserver).com/denonavr.php?cmd=muteoff   | Alexa trigger unmute tv       | Alexa, unmute tv       |
+| volup     | https://(yourserver)/denonavr.php?cmd=volup     | Alexa trigger volume up       | Alexa, volume up       |
+| wayvolup  | https://(yourserver)/denonavr.php?cmd=wayvolup  | Alexa trigger volume way up   | Alexa, volume way up   |
+| voldwn    | https://(yourserver)/denonavr.php?cmd=voldwn    | Alexa trigger volume down     | Alexa, volume down     |
+| wayvoldwn | https://(yourserver)/denonavr.php?cmd=wayvoldwn | Alexa trigger volume way down | Alexa, volume way down |
+| mplay     | https://(yourserver)/denonavr.php?cmd=mplay     | Alexa trigger Apple TV        | Alexa, Apple TV        |
+| cblsat    | https://(yourserver)/denonavr.php?cmd=cblsat    | Alexa trigger TV              | Alexa, TV              |
+| muteon    | https://(yourserver)/denonavr.php?cmd=muteon    | Alexa trigger mute tv         | Alexa, mute tv         |
+| muteoff   | https://(yourserver)/denonavr.php?cmd=muteoff   | Alexa trigger unmute tv       | Alexa, unmute tv       |
 
 
 
