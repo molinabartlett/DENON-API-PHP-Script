@@ -30,20 +30,23 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 
 ### 3. IFTTT
 
-* You need to create an IFTTT applet for each command. The ingredient is IF Alexa Say a specifc phase THEN trigger Webhook. Here's an example to mute the tv.
+* You need to create an IFTTT applet for each command. The ingredient is IF Alexa Say a specifc phase THEN trigger Webhook. 
+
+Here's an example to mute the tv.
 
 **IF ALEXA**
-  Say a specific phrase - "mute tv"
+
+  * ***Say a specific phrase*** - "mute tv"
 
 **WEBHOOK**
 
-  ***Method*** - Post
+ * ***Method*** - Post
   
-  ***Body*** - NULL
+ * ***Body*** - NULL
   
-  ***URL*** - https://(yourserver)/denonavr.php?cmd=muteon | (URL of script) + ?cmd= + (parameter) 
+ * ***URL*** - https://(yourserver)/denonavr.php?cmd=muteon | (URL of script) + ?cmd= + (parameter) 
  
-  ***Content Type*** - application/x-www-form-urlencoded
+ * ***Content Type*** - application/x-www-form-urlencoded
   
   
 **Parameters in PHP Script**
