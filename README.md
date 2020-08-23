@@ -25,7 +25,7 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 * Update the $ip variable to your home IP address and the $port variable to the port you're forwarding. 
 * Upload the script to the webserver.
 
-NOTE: If you're using a hosting provider, make sure they have opened your specified port for outbound connections. 
+*NOTE: If you're using a hosting provider, make sure they have opened your specified port for outbound connections.*
 
 
 ### 3. IFTTT
@@ -44,25 +44,16 @@ WEBHOOK
   
 **Parameters in PHP Script**
 
-+-----------+-----------------------+
 | Parameter | Action                |
-+-----------+-----------------------+
+|-----------|-----------------------|
 | volup     | Volume Up             |
-+-----------+-----------------------+
 | wayvolup  | Volume Up More        |
-+-----------+-----------------------+
 | voldwn    | Volume Down           |
-+-----------+-----------------------+
 | wayvoldwn | Volume Down More      |
-+-----------+-----------------------+
 | mplay     | Switch input to Media |
-+-----------+-----------------------+
 | cblsat    | switch input to Cable |
-+-----------+-----------------------+
 | muteon    | Mute On               |
-+-----------+-----------------------+
 | muteoff   | Mute Off              |
-+-----------+-----------------------+
 
 
   
@@ -71,25 +62,19 @@ WEBHOOK
 
 ## Examples
 
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
-| Parameter | WebHook URL                                         | IFTTT Cmd                     | Alexa Cmd              |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
+**Examples**
+
+| Parameter | URL                                                 | IFTTT Cmd                     | Alexa Cmd              |
+|-----------|-----------------------------------------------------|-------------------------------|------------------------|
 | volup     | https://<yourserver>.com/denonavr.php?cmd=volup     | Alexa trigger volume up       | Alexa, volume up       |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | wayvolup  | https://<yourserver>.com/denonavr.php?cmd=wayvolup  | Alexa trigger volume way up   | Alexa, volume way up   |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | voldwn    | https://<yourserver>.com/denonavr.php?cmd=voldwn    | Alexa trigger volume down     | Alexa, volume down     |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | wayvoldwn | https://<yourserver>.com/denonavr.php?cmd=wayvoldwn | Alexa trigger volume way down | Alexa, volume way down |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | mplay     | https://<yourserver>.com/denonavr.php?cmd=mplay     | Alexa trigger Apple TV        | Alexa, Apple TV        |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | cblsat    | https://<yourserver>.com/denonavr.php?cmd=cblsat    | Alexa trigger TV              | Alexa, TV              |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | muteon    | https://<yourserver>.com/denonavr.php?cmd=muteon    | Alexa trigger mute tv         | Alexa, mute tv         |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | muteoff   | https://<yourserver>.com/denonavr.php?cmd=muteoff   | Alexa trigger unmute tv       | Alexa, unmute tv       |
-+-----------+-----------------------------------------------------+-------------------------------+------------------------+
+
 
 
 
