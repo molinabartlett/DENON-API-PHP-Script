@@ -66,14 +66,14 @@ WEBHOOK
 
 | Parameter | URL                                                 | IFTTT Cmd                     | Alexa Cmd              |
 |-----------|-----------------------------------------------------|-------------------------------|------------------------|
-| volup     | https://<yourserver>.com/denonavr.php?cmd=volup     | Alexa trigger volume up       | Alexa, volume up       |
-| wayvolup  | https://<yourserver>.com/denonavr.php?cmd=wayvolup  | Alexa trigger volume way up   | Alexa, volume way up   |
-| voldwn    | https://<yourserver>.com/denonavr.php?cmd=voldwn    | Alexa trigger volume down     | Alexa, volume down     |
-| wayvoldwn | https://<yourserver>.com/denonavr.php?cmd=wayvoldwn | Alexa trigger volume way down | Alexa, volume way down |
-| mplay     | https://<yourserver>.com/denonavr.php?cmd=mplay     | Alexa trigger Apple TV        | Alexa, Apple TV        |
-| cblsat    | https://<yourserver>.com/denonavr.php?cmd=cblsat    | Alexa trigger TV              | Alexa, TV              |
-| muteon    | https://<yourserver>.com/denonavr.php?cmd=muteon    | Alexa trigger mute tv         | Alexa, mute tv         |
-| muteoff   | https://<yourserver>.com/denonavr.php?cmd=muteoff   | Alexa trigger unmute tv       | Alexa, unmute tv       |
+| volup     | https://(yourserver).com/denonavr.php?cmd=volup     | Alexa trigger volume up       | Alexa, volume up       |
+| wayvolup  | https://(yourserver).com/denonavr.php?cmd=wayvolup  | Alexa trigger volume way up   | Alexa, volume way up   |
+| voldwn    | https://(yourserver).com/denonavr.php?cmd=voldwn    | Alexa trigger volume down     | Alexa, volume down     |
+| wayvoldwn | https://(yourserver).com/denonavr.php?cmd=wayvoldwn | Alexa trigger volume way down | Alexa, volume way down |
+| mplay     | https://(yourserver).com/denonavr.php?cmd=mplay     | Alexa trigger Apple TV        | Alexa, Apple TV        |
+| cblsat    | https://(yourserver).com/denonavr.php?cmd=cblsat    | Alexa trigger TV              | Alexa, TV              |
+| muteon    | https://(yourserver).com/denonavr.php?cmd=muteon    | Alexa trigger mute tv         | Alexa, mute tv         |
+| muteoff   | https://(yourserver).com/denonavr.php?cmd=muteoff   | Alexa trigger unmute tv       | Alexa, unmute tv       |
 
 
 
@@ -83,3 +83,4 @@ WEBHOOK
 
 * The DENON API documentation is linked if you need other commands.
 * If you're home IP address changes you only need to update the IP address in the PHP file. (Or you can set up DNS, it wasn't worth the effort to me).
+* I'm not a developer, I'm just a dabbler that cobbled this together!
