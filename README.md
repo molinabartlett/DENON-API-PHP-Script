@@ -16,11 +16,11 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 ## INSTRUCTIONS
 
 
-### 1. PORT FORWARDING 
+### 1. Port Forwarding
 
 * First add a port forwarding rule in your router to forward the API request to your DENON Receiver. Choose whatever port you want but have it forward to <DENON IP Address>:8080. For example: 4566 -> 192.168.1.111:8080.
  
-### 2. SCRIPT
+### 2. PHP Script
 
 * Update the $ip variable to your home IP address and the $port variable to the port you're forwarding. 
 * Upload the script to the webserver.
