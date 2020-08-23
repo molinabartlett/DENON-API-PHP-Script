@@ -11,7 +11,7 @@ $cmd = htmlspecialchars($_GET['cmd']);
 
 echo $cmd;
 
-if ($cmd == 'volup') {
+if ($cmd == 'volup') { //Volume Up
     for ($i = 0; $i < 5; $i++) {
         //loop
 
@@ -23,7 +23,7 @@ if ($cmd == 'volup') {
         $result = curl_exec($ch);
         curl_close($ch);
     }
-} elseif ($cmd == 'wayvolup') {
+} elseif ($cmd == 'wayvolup') { //Volume Up More
     for ($i = 0; $i < 10; $i++) {
         //loop
 
@@ -35,7 +35,7 @@ if ($cmd == 'volup') {
         $result = curl_exec($ch);
         curl_close($ch);
     }
-} elseif ($cmd == 'voldwn') {
+} elseif ($cmd == 'voldwn') { //Volume Down
     for ($i = 0; $i < 5; $i++) {
         //loop
 
@@ -47,7 +47,7 @@ if ($cmd == 'volup') {
         $result = curl_exec($ch);
         curl_close($ch);
     }
-} elseif ($cmd == 'wayvoldwn') {
+} elseif ($cmd == 'wayvoldwn') { // Volume Down More
     for ($i = 0; $i < 20; $i++) {
         //loop
 
@@ -59,7 +59,7 @@ if ($cmd == 'volup') {
         $result = curl_exec($ch);
         curl_close($ch);
     }
-} elseif ($cmd == 'mplay') {
+} elseif ($cmd == 'mplay') { //Input Media
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url . '?SIMPLAY');
@@ -67,7 +67,7 @@ if ($cmd == 'volup') {
 
     $result = curl_exec($ch);
     curl_close($ch);
-} elseif ($cmd == 'cblsat') {
+} elseif ($cmd == 'cblsat') { // Input Cable/Sat
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url . '?SISAT%2FCBL');
@@ -75,7 +75,7 @@ if ($cmd == 'volup') {
 
     $result = curl_exec($ch);
     curl_close($ch);
-} elseif ($cmd == 'muteon') {
+} elseif ($cmd == 'muteon') { //Mute On
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url . '?MUON');
@@ -83,7 +83,7 @@ if ($cmd == 'volup') {
 
     $result = curl_exec($ch);
     curl_close($ch);
-} elseif ($cmd == 'muteoff') {
+} elseif ($cmd == 'muteoff') { //Mute Off
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $url . '?MUOFF');
