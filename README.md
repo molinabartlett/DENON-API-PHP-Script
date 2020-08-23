@@ -13,14 +13,14 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 
 
 
-*** **INSTRUCTIONS ***
+##INSTRUCTIONS
 
 
-*** **1. PORTFORWARDING ***
+###1. PORTFORWARDING 
 
 * First add a port forwarding rule in your router to forward the API request to your DENON Receiver. Choose whatever port you want but have it forward to <DENON IP Address>:8080. For example: 4566 -> 192.168.1.111:8080.
  
-*** **2. SCRIPT ***
+###2. SCRIPT
 
 * Update the $ip variable to your home IP address and the $port variable to the port you're forwarding. 
 * Upload the script to the webserver.
@@ -28,7 +28,7 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 NOTE: If you're using a hosting provider, make sure they have opened your specified port for outbound connections. 
 
 
-*** **3. IFTTT ***
+###3. IFTTT
 
 * You need to create an IFTTT applet for each command. The ingredient is IF Alexa Say a specifc phase THEN trigger Webhook. Here's an example to mute the tv.
 
@@ -42,7 +42,7 @@ WEBHOOK
   Content Type - application/x-www-form-urlencoded
   
   
-**Parameters in PHP Script 
+**Parameters in PHP Script**
 
 +-----------+-----------------------+
 | Parameter | Action                |
@@ -65,7 +65,11 @@ WEBHOOK
 +-----------+-----------------------+
 
 
-**Examples
+  
+###4. Alexa
+* If you don't want to say "Alexa trigger" before every phrase, set up a routine in Alexa as a shortcut for the IFTTT trigger.
+
+##Examples
 
 +-----------+-----------------------------------------------------+-------------------------------+------------------------+
 | Parameter | WebHook URL                                         | IFTTT Cmd                     | Alexa Cmd              |
@@ -88,15 +92,9 @@ WEBHOOK
 +-----------+-----------------------------------------------------+-------------------------------+------------------------+
 
 
-  
-*** 4. Alexa ***
-* If you don't want to say "Alexa trigger" before every phrase, set up a routine in Alexa as a shortcut for the IFTTT trigger.
 
 
-
-
-
-*** OTHER ***
+##OTHER
 
 * The DENON API documentation is linked if you need other commands.
 * If you're home IP address changes you only need to update the IP address in the PHP file. (Or you can set up DNS, it wasn't worth the effort to me).
