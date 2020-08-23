@@ -90,5 +90,5 @@ Here's an example to mute the tv:
 ## OTHER
 
 * The DENON API documentation is linked if you need other commands.
-* If you're home IP address changes you only need to update the IP address in the PHP file. (Or you can set up DNS, it wasn't worth the effort to me).
+* If your home IP address changes you only need to update the IP address in the PHP file. (Or you can set up DNS, it wasn't worth the effort to me).
 * I'm not a developer, I'm just a dabbler that cobbled this together!
