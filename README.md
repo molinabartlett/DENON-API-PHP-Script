@@ -32,7 +32,7 @@ Why do you need this PHP script? Unfortunately, the volume commands on the DENON
 
 * You need to create an IFTTT applet for each command. The ingredient is IF Alexa Say a specifc phase THEN trigger Webhook. 
 
-Here's an example to mute the tv.
+Here's an example to mute the tv:
 
 **IF ALEXA**
 
@@ -44,7 +44,8 @@ Here's an example to mute the tv.
   
  * ***Body*** - NULL
   
- * ***URL*** - https://(yourserver)/denonavr.php?cmd=muteon | (URL of script) + ?cmd= + (parameter) 
+ * ***URL*** - https://(yourserver)/denonavr.php?cmd=muteon
+   * Format is (URL of script) + ?cmd= + (parameter) 
  
  * ***Content Type*** - application/x-www-form-urlencoded
   
